@@ -1,0 +1,53 @@
+.main h1 {
+    padding: 50px 0;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .main ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .main ul li {
+    padding: 5px 15px;
+    border: 1px solid #333;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .main ul li.active, 
+  .main ul li:hover {
+    background-color: #ec1c23;
+    color: #fff;
+    /* if the last three characters are the same as the beginning three in HEX you only need to put those three */
+    border: 2px solid #ec1c23;
+  }
+  
+  .main .container-fluid {
+    overflow: hidden;
+    padding: 0;
+  }
+  
+  .main .container-fluid .col-md-3 {
+    padding:0;
+    float: left;
+  }
+  
+  .main .container-fluid img {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+  }
+  
+  .main img {
+    margin-top: 25px;
+  }
+  
+  @media (max-width: 767px) { /*This is up to what the size of a tablet is so it auto adjusts & the buttons cascade, then stacks out stuff, would even work on mobile. Can use CSS to make things mobile responsive. There are limitations to this method in CSS so JS will most likely be your preferred */
+    .main .container-fluid img {
+      margin-bottom: 15px;
+    }
+  }
